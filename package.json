@@ -1,0 +1,11 @@
+{
+  "name": "mobiabert-site",
+  "version": "1.0.0",
+  "description": "MobiAbert website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Chaurais",
+  "license": "ISC"
+}
