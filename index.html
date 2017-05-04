@@ -5,12 +5,71 @@
   <title></title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900|Montserrat:300,400,600|Raleway:400,700|Roboto:300,400" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,900,900i|Montserrat:300,400,600|Raleway:400,700|Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <div class="bg-light-gray">
+<body data-spy="scroll" data-target=".nav-bar">
+  <div class="nav-bar">
+    <div class="content">
+      <a href="#slider">
+        <h1 class="logo" title="MobiAbert">MobiAbert</h1>
+      </a>
+      <ul class="nav nav-tabs">
+        <li><a href="#integrador">Integrador</a></li>
+        <li><a href="#play">Play</a></li>
+        <li><a href="#exclusivo">App Exclusivo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="http://mobiabert.com.br/sistema" target="_blank">Login</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <ul id="slider" class="slider">
+      <li>
+        <div class="slider-content" style="padding-top: 470px">
+          <img src="img/logo-mobi-abert-branco.png" alt="logo mobi abert" style="width: 785px; margin-bottom: 15px">
+          <h2 style="font-size: 72px">Todos os Sons do Brasil</h2>
+        </div>
+        <div class="slide-bg">
+          <img src="img/tela1.jpg" alt="">
+        </div>
+      </li>
+      <li>
+        <div class="slider-content" style="padding-top: 470px">
+          <h2 style="margin-bottom: 20px; font-size: 72px">Conheça o integrador</h2>
+          <img src="img/logo-mobi-abert-branco.png" alt="logo mobi abert" style="width: 785px; margin-bottom: 45px">
+          <a href="#integrador" class="btn-more">Quero saber mais</a>
+        </div>
+        <div class="slide-bg">
+          <img src="img/tela2.jpg" alt="">
+        </div>
+      </li>
+      <li>
+        <div class="slider-content" style="padding-top: 470px">
+          <h2 style="font-size: 52px">Adquira um app exclusivo para</h2>
+          <h2 style="font-size: 168px; font-weight: 900; line-height: 0.8em">sua Rádio</h2>
+        </div>
+        <div class="slide-bg">
+          <img src="img/tela3.jpg" alt="">
+        </div>
+      </li>
+      <li>
+        <div class="slider-content" style="padding-top: 470px">
+          <img src="img/logo-mobi-abert-play-branco.png" alt="logo mobi abert" style="width: 815px; margin-bottom: 30px">
+          <h2 style="font-size: 52px">escute sua rádio favorita</h2>
+          <h2 style="font-size: 52px; margin-bottom: 50px">enquanto navega na internet</h2>
+          <a href="http://mobilize-se.net.br/play" target="_blank" class="btn-more">Ouça agora mesmo</a>
+        </div>
+        <div class="slide-bg">
+          <img src="img/tela4.jpg" alt="">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="integrador" class="bg-light-gray">
     <div class="content" style="padding: 270px 0 150px 0">
       <div class="row clear mgbt50">
         <div class="col col6" style="text-align: left">
@@ -32,11 +91,11 @@
           <p>O ouvinte pode escutar sua rádio favorita de qualquer lugar do mundo, interagir com a emissora e descobrir novas rádios. Os portais de notícias G1 e ABERT estão disponíveis para o internauta acessar as notícias enquanto escuta a programação.</p>
           <p class="sub mgbt50">*Disponibilidade das redes sociais e qualidade da transmissão sujeitas à atualização da rádio.</p>
           <div class="mgbt50">
-            <a class="shop-btn" href=""  style="margin-right: 60px">
+            <a class="shop-btn" href="https://itunes.apple.com/us/app/mobiabert/id943486373?l=pt&ls=1&mt=8" target="_blank" style="margin-right: 60px">
               <img src="img/icone-apple-preto.png" alt="apple">
               <p>Disponível na <br><strong>app store</strong></p>
             </a>
-            <a class="shop-btn" href="">
+            <a class="shop-btn" href="https://play.google.com/store/apps/details?id=devmaker.com.br.abertmobilizesenv" target="_blank">
               <img src="img/icone-android-preto.png" alt="apple">
               <p>Disponível na <br><strong>play store</strong></p>
             </a>
@@ -44,8 +103,8 @@
         </div>
         <div class="col col6" style="text-align: right">
           <div style="position: relative; right: -100px; top: -80px;">
-            <img class="screen" src="img/tela-app1.jpg" alt="telas do aplicativo">
-            <img class="screen" src="img/tela-app2.jpg" alt="telas do aplicativo" style="position: absolute; left: 80px; top: 80px">
+            <img class="screen" src="img/tela-app4.jpg" alt="telas do aplicativo">
+            <img class="screen" src="img/tela-app3.jpg" alt="telas do aplicativo" style="position: absolute; left: 80px; top: 80px">
           </div>
         </div>
       </div>
@@ -57,7 +116,9 @@
         <div class="clear section features">
           <div class="col col3">
             <div class="feat">
-              <img class="mgbt20" src="img/icone-mega-fone.png" alt="megafone">
+              <div style="height: 105px">
+                <img class="mgbt20" src="img/icone-mega-fone.png" alt="megafone">
+              </div>
               <h3>Rádios</h3>
               <hr class="separator">
               <p>As rádios mais favoritadas aparecem em uma lista com destaque especial</p>
@@ -65,7 +126,9 @@
           </div>
           <div class="col col3">
             <div class="feat">
-              <img class="mgbt20" src="img/icone-lupa.png" alt="lupa">
+              <div style="height: 105px">
+                <img class="mgbt20" src="img/icone-lupa.png" alt="lupa">
+              </div>
               <h3>Busca</h3>
               <hr class="separator">
               <p>Filtro de busca inteligente por gênero, geolocalização, estado e cidade</p>
@@ -73,7 +136,9 @@
           </div>
           <div class="col col3">
             <div class="feat">
-              <img class="mgbt20" src="img/icone-celular.png" alt="lupa">
+              <div style="height: 105px">
+                <img class="mgbt20" src="img/icone-celular.png" alt="celular">
+              </div>
               <h3>Tela Exclusiva</h3>
               <hr class="separator">
               <p>Tela exclusiva da emissora, com informações sobre programação e link de download do app exclusivo</p>
@@ -81,7 +146,9 @@
           </div>
           <div class="col col3">
             <div class="feat">
-              <img class="mgbt20" src="img/icone-sinal.png" alt="lupa">
+              <div style="height: 105px">
+                <img class="mgbt20" src="img/icone-sinal.png" alt="sinal">
+              </div>
               <h3>Interatividade</h3>
               <hr class="separator">
               <p>Acesse as redes sociais, avalie e envie mensagem com áudio e imagem para a rádio</p>
@@ -91,22 +158,22 @@
       </div>
     </div>
   </div>
-  <div class="content" style="padding: 140px 0 130px 0">
+  <div id="play" class="content" style="padding: 140px 0 130px 0">
     <div class="row">
       <div class="clear">
         <div class="col col7">
           <img style="position: relative; left: -260px" src="img/notebook.png" alt="notebook">
         </div>
         <div class="col col5">
-          <img class="mgbt30" src="img/logo-mobi-abert-preto.png" width="308">
+          <img class="mgbt30" src="img/logo-mobi-abert-play-preto.png" width="405">
           <p>Escute sua programação favorita enquanto navega na internet!</p>
           <p class="mgbt50">O MobiAbert Play é um site, como uma rede social dirigida aos ouvintes. Reúne todas as emissoras e funcionalidades presentes no app integrador. Os dois sistemas são interligados, ou seja, favoritou uma rádio no app ou alterou alguma informação na página da sua rádio? Vai aparecer no site também!</p>
-          <a href="#" class="btn">Visite o site</a>
+          <a href="http://mobilize-se.net.br/play" target="_blank" class="btn">Visite o site</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-light-gray">
+  <div id="exclusivo" class="bg-light-gray">
     <div class="content" style="padding: 140px 0 150px 0">
       <div class="clear">
         <div class="row">
@@ -123,16 +190,16 @@
             <p class="text-alt mgbt20">Aumente sua audiência por meio do aplicativo personalizado unicamente para sua rádio, disponível para smartphones e tablets Android e iOS.<br>Personalize com a logo da sua emissora e escolha a cor que quiser!</p>
             <ul class="list mgbt30">
               <li>Painel de Controle</li>
-              <li>Notícias</li>
-              <li>Mural de recados</li>
+              <li>Chat Ilimitado</li>
               <li>Programação</li>
+              <li>Redes Sociais</li>
             </ul>
             <h4 class="mgbt20">Baixe já a versão de testes!</h4>
-            <a class="shop-btn alt-o" href="" style="margin-right: 20px">
+            <a class="shop-btn alt-o" style="margin-right: 20px" href="https://itunes.apple.com/us/app/access-mobile-radio-controle/id905070426?l=pt&ls=1&mt=8" target="_blank">
               <img src="img/icone-apple-preto.png" alt="apple">
               <p>Disponível na <br><strong>app store</strong></p>
             </a>
-            <a class="shop-btn alt" href="">
+            <a class="shop-btn alt" href="https://play.google.com/store/apps/details?id=br.com.devmaker.radiocontroletest" target="_blank" >
               <img src="img/icone-android-branco.png" alt="apple">
               <p>Disponível na <br><strong>play store</strong></p>
             </a>
@@ -145,7 +212,7 @@
     <div class="content" style="padding: 140px 0 130px 0">
       <div class="row">
         <div class="col col12">
-          <h2 class="title alt center mgbt50">Benefícios <span class="dot alt">.</span></h2>
+          <h2 id="x" class="title alt center mgbt50">Benefícios <span class="dot alt">.</span></h2>
         </div>
       </div>
       <div class="row">
@@ -172,7 +239,7 @@
             </div>
             <h3>Interatividade</h3>
             <hr class="separator">
-            <p>Veja e comente os recados dos seus ouvintes, confira as músicas mais pedidas e muito mais</p>
+            <p>Converse em tempo real com os seus ouvintes através do chat integrado e ilimitado</p>
           </div>
           <div class="col col3">
             <div class="icon">
@@ -180,106 +247,172 @@
             </div>
             <h3>Configure</h3>
             <hr class="separator">
-            <p>Configure mais de um endereço de streaming, canais de áudio, podcasts, notícias e programação</p>
+            <p>Configure sua programação, redes sociais, website e todas as informações da sua rádio</p>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col col12">
-          <a href="">Saiba mais</a>
-        </div>
-      </div>
     </div>
   </div>
-  <div class="bg-picture">
-    <div class="content" style="padding: 140px 0 130px 0">
-      <div class="row clear">
-        <div class="col col6">
-          <h2 class="title mgbt30">Sobre o Projeto <span class="dot">.</span></h2>
-          <p>A ABERT apresenta o Projeto MobiAbert, uma proposta gratuita que oferece à sua rádio a possibilidade de uma experiência no universo digital. A emissora possui 3 oportunidades:</p>
-          <p>
-            <strong>App MobiAbert:</strong> É o maior integrador de rádios do país, com mais de 2,5 mil emissoras. O sistema é gratuito e reúne rádios de todo o Brasil em um aplicativo disponível para smartphones e tablets iOS e Android. Permite ao ouvinte conhecer rádios de todo o país por meio de uma busca rápida por cidade, estado, gênero, região e geolocalização. Ou seja, o ouvinte pode escutar rádios de outros lugares do país além do limite das ondas do rádio.<br>
-            <strong>Portal MobiAbert Play:</strong> É um site na internet, como uma rede social dirigida aos ouvintes. Reúne todas as emissoras presentes no app integrador.<br>
-            <strong>App exclusivo:</strong> A rádio tem seu próprio aplicativo disponível para smartphones. A ABERT cobre os custos iniciais e ainda paga os primeiros 6 meses de manutenção para rádios associadas. Após esse período, a emissora passa a pagar apenas um salário mínimo por ano. Os aplicativos exclusivos possuem espaços de publicidade compartilhada que podem gerar faturamentos para as emissoras. O gerenciamento desta publicidade é feito pela rádio ou pela administradora do projeto. Há, ainda, um Painel de Controle com informações dos usuários, relatórios de estatísticas, chat ilimitado e gratuito, além da personalização de cores.<br>
-          </p>
-          <p>Uma oportunidade única para uma experiência online completa!</p>
-          <a href="">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-light-gray">
-    <div class="content" style="padding: 140px 0 130px 0">
-      <div class="row clear">
-        <div class="col col12">
-          <h2 class="title center">Galeria <span class="dot">.</span></h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col12">
-          conteúdo galeria
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="content" style="padding: 140px 0 130px 0">
-    <div class="row">
-      <div class="col col12">
-        <h2 class="title center mgbt50">Depoimentos <span class="dot">.</span></h2>
-      </div>
-    </div>
+  <div id="sobre" class="content" style="padding: 140px 0 130px 0">
     <div class="row clear">
-      <div class="col col12">
-        <div class="gray-box center">
-          <p>aeuhe ue uhe he auehauh uahue aehuhauh ua aeuhuh uaehueahue eauheauae he aue ah aeuehuehaueahu heuah eauhe auhu eahu eahu</p>
-          <p><strong>Rádio de São Paulo</strong></p>
+      <div class="col col6">
+        <h2 class="title mgbt30">Sobre o Projeto <span class="dot">.</span></h2>
+        <p>A ABERT apresenta o Projeto MobiAbert, uma proposta gratuita que oferece à sua rádio a possibilidade de uma experiência no universo digital. A emissora possui 3 oportunidades:</p>
+        <div class="accordion mgbt30">
+          <div class="tab">
+            <h3>App MobiAbert</h3>
+            <div class="tab-content">
+              <p>É o maior integrador de rádios do país, com mais de 2,5 mil emissoras. O sistema é gratuito e reúne rádios de todo o Brasil em um aplicativo disponível para smartphones e tablets iOS e Android. Permite ao ouvinte conhecer rádios de todo o país por meio de uma busca rápida por cidade, estado, gênero, região e geolocalização. Ou seja, o ouvinte pode escutar rádios de outros lugares do país além do limite das ondas do rádio.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <h3>Portal MobiAbert play</h3>
+            <div class="tab-content" style="display: none">
+              <p>É um site na internet, como uma rede social dirigida aos ouvintes. Reúne todas as emissoras presentes no app integrador.</p>
+            </div>
+          </div>
+          <div class="tab">
+            <h3>App Exclusivo</h3>
+            <div class="tab-content" style="display: none">
+              <p>A rádio tem seu próprio aplicativo disponível para smartphones. A ABERT cobre os custos iniciais e ainda paga os primeiros 6 meses de manutenção para rádios associadas. Após esse período, a emissora passa a pagar apenas um salário mínimo por ano. Os aplicativos exclusivos possuem espaços de publicidade compartilhada que podem gerar faturamentos para as emissoras. O gerenciamento desta publicidade é feito pela rádio ou pela administradora do projeto.</p>
+            </div>
+          </div>
         </div>
+        <p>Uma oportunidade única para uma experiência online completa!</p>
+      </div>
+      <div class="col col6">
+        <img src="img/foto-placa-menor.jpg">
       </div>
     </div>
   </div>
-  <div class="gradient">
+  <div class="bg-light-gray" style="padding: 140px 0 250px 0">
+    <h2 class="title center mgbt75">Galeria <span class="dot">.</span></h2>
+    <div class="row clear galeria">
+      <ul id="galeria">
+        <li><img src="img/tela-app1.jpg"></li>
+        <li><img src="img/tela-app2.jpg"></li>
+        <li><img src="img/tela-app3.jpg"></li>
+        <li><img src="img/tela-app4.jpg"></li>
+        <li><img src="img/tela-app5.jpg"></li>
+        <li><img src="img/tela-app6.jpg"></li>
+        <li><img src="img/tela-app7.jpg"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content" style="padding: 140px 0 250px 0">
+    <h2 class="title center mgbt75">Depoimentos <span class="dot">.</span></h2>
+    <div class="row clear">
+      <div class="col col12 depoimentos">
+        <ul id="depoimentos">
+          <li>
+            <div class="gray-box center">
+              <p>“As pessoas estão conhecendo aos poucos essa nova possibilidade de interação, mas já temos muitos ouvintes pelo aplicativo. É bacana demais porque as pessoas ligam de Juazeiro do Norte, de Fortaleza e de muitas outras cidades dizendo que estão escutando nossa rádio pelo celular”</p>
+              <p><strong>Maria Vieira Liz</strong>, dona da Rádio Maciço de Baturité (CE)</p>
+            </div>
+          </li>
+          <li>
+            <div class="gray-box center">
+              <p>“A princípio nós ficamos assustados com a internet, mas logo percebemos que na verdade ela veio para ajudar. Agora de qualquer lugar você pode escutar a rádio e ficar informado. É só ter a internet e o celular. Você pode ver pelos acessos que a relação com o ouvinte melhorou muito. A interação deu uma certa credibilidade para nós”</p>
+              <p><strong>José Saliba</strong>, diretor-proprietário da Rádio Nativa 96,5 (PR)</p>
+            </div>
+          </li>
+          <li>
+            <div class="gray-box center">
+              <p>"Estou ligado aí com vocês. Adoro a rádio! Coloquem uma música pra nós brasileiros aqui no Japão"</p>
+              <p><strong>Erich Ferreira da Costa</strong>, ouvinte da Rádio Jovem Pan Litoral, de Osório (RS)</p>
+            </div>
+          </li>
+          <li>
+            <div class="gray-box center">
+              <p>“O projeto ajudou a divulgar nossa emissora, nossa logomarca, aumentou a audiência, levou nossa voz a lugares onde não éramos ouvidos, enfim, projetou-nos mais longe”</p>
+              <p><strong>Samuel Renovato</strong>, dono da Rádio Nordeste Evangélica (RN)</p>
+            </div>
+          </li>
+          <li>
+            <div class="gray-box center">
+              <p>“É uma tecnologia fantástica para nós que viajamos muito. Vai possibilitar que eu acompanhe a programação da nossa rádio em qualquer lugar no mundo. O que me motivou a participar do projeto foi, com certeza, essa mobilidade e agilidade que o aplicativo proporciona”</p>
+              <p><strong>Cacai Amorim</strong>, diretor presidente da Rádio 102.9 Amorim FM (SC)</p>
+            </div>
+          </li>
+          <li>
+            <div class="gray-box center">
+              <p>“Bom dia amigos da Boa Nova. Quero desejar um bom dia e obrigado pelo vosso trabalho. Estou a ouvir o vosso programa em Lisboa”</p>
+              <p><strong>Matheus Cordeiro</strong>, ouvinte da Rádio Boa Nova, de Guarulhos (SP)</p>
+            </div>
+          </li>
+          <li>
+            <div class="gray-box center">
+              <p>“É uma experiência maravilhosa. Nós não tínhamos aplicativo até então, mas com essas novas tecnologias e através dos aplicativos, nós pudemos proporcionar aos ouvintes uma nova forma de escutar nossa programação. E até mesmo quem não está na área de abrangência no nosso dial pode acompanhar as informações da região de qualquer parte do planeta”</p>
+              <p><strong>Fernando Hübner</strong>, diretor de quatro rádios em Santa Catarina</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="cadastro" class="gradient">
     <div class="content" style="padding: 80px 0 80px 0">
       <div class="row clear">
-        <div class="col col6">
-          <h2 class="title alt" style="font-size: 53px">Cadastre-se Já</h2>
-          <h3 class="subtitle alt" style="font-size: 53px">É totalmente grátis</h3>
+        <div class="col col5">
+          <div style="padding-top: 35px">
+            <h2 class="title alt" style="font-size: 53px">Cadastre-se Já</h2>
+            <h3 class="subtitle alt" style="font-size: 53px">É totalmente grátis</h3>
+          </div>
         </div>
-        <div class="col col6">
-          <a href="">Já sou Cadastrado</a>
-          <a href="">Não sou Cadastrado</a>
+        <div class="col col7">
+          <a id="sign" class="btn-sign" href="">Quero participar do integrador</a>
+          <a style="margin-bottom: 0" class="btn-sign" href="http://mobilize-se.net.br/sistema/emissoras" target="_blank">Quero o app exclusivo</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg-light-gray">
+  <div id="contato" class="bg-light-gray">
     <div class="content" style="padding: 140px 0 80px 0">
       <div class="row clear">
         <div class="col col12">
           <h2 class="title center mgbt75">Fale Conosco <span class="dot">.</span></h2>
         </div>
       </div>
-      <div class="row clear">
+      <div class="row clear contact">
         <div class="col col6">
-          <i>ícone</i>
-          <h3>Telefone para Contato</h3>
-          <p>+55 11 1234 5678</p>
-          <p>+55 11 1234 5678</p>
+          <div class="icon">
+            <img src="img/icone-fone.png" alt="telefone">
+          </div>
+          <h3>Telefones para Contato</h3>
+          <hr class="separator">
+          <p>61 2104 4600</p>
+          <p>0800 940 2104</p>
         </div>
         <div class="col col6">
-          <i>ícone</i>
+          <div class="icon">
+            <img src="img/icone-email.png" alt="email">
+          </div>
           <h3>Endereço de Email</h3>
-          <p>mobiabert@mobiabert.com.br</p>
-          <p>abert@abert.org.br</p>
+          <hr class="separator">
+          <p>mobiabert@abert.org.br</p>
         </div>
       </div>
     </div>
   </div>
-  
-  <script id="__bs_script__">
+  <div class="gradient">
+    <div class="content" style="padding: 40px 0 10px 0">
+      <div class="social">
+        <a href="https://www.facebook.com/mobilizese.net.br" target="_blank"><img src="img/icone-facebook.png" alt="facebook"></a>
+        <a href="https://twitter.com/mobilizeseabert" target="_blank"><img src="img/icone-twitter.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/mobilizese/" target="_blank"><img src="img/icone-instagram.png" alt="instagram"></a>
+      </div>
+      <p class="copy">Todos os direitos reservados à <strong>ABERT</strong> &copy; 2017</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/script.js?_=1"></script>
+  <!--<script id="__bs_script__">
     //<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("HOST", location.hostname));
 		//]]>
-  </script>
+  </script>-->
 </body>
 
 </html>
